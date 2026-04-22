@@ -187,6 +187,9 @@ export function auth(h, bridgeKey) {
 export function publicPathname(req) {
   const u = new URL(req.url || "/", "http://localhost")
   let p = u.pathname
+  if (p === "/guild-bridge" || p.startsWith("/guild-bridge/")) {
+    p = p.replace(/^\/guild-bridge/, "") || "/"
+  }
   if (p === "/api" || p.startsWith("/api/")) {
     p = p.replace(/^\/api/, "") || "/"
   }
