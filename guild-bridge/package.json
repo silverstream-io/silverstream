@@ -1,0 +1,14 @@
+{
+  "name": "inbox-sms-bridge",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "imap": "^0.8.19",
+    "mailparser": "^3.7.0"
+  }
+}
