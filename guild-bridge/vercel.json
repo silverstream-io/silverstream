@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/health", "destination": "/api/health" },
+    { "source": "/v1/messages/unread", "destination": "/api/v1/messages/unread" },
+    { "source": "/v1/sms", "destination": "/api/v1/sms" }
+  ]
+}
