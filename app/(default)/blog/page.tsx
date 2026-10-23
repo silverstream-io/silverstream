@@ -39,10 +39,16 @@ export default function Blog() {
                   >
                     <div className="mb-2 flex items-center gap-2 text-sm text-indigo-200/65">
                       <time dateTime={post.date}>{formatDate(post.date)}</time>
-                      {post.draft && (
+                      {post.draft ? (
                         <span className="rounded-full bg-amber-500/20 px-2 py-0.5 text-xs text-amber-300">
                           Draft
                         </span>
+                      ) : (
+                        post.scheduled && (
+                          <span className="rounded-full bg-sky-500/20 px-2 py-0.5 text-xs text-sky-300">
+                            Scheduled
+                          </span>
+                        )
                       )}
                     </div>
                     <h2 className="mb-2 font-nacelle text-xl font-semibold text-gray-200 transition group-hover:text-indigo-300">
