@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - Silverstream',
-  description: 'Get in touch with Silverstream to supercharge your customer support with AI',
+  title: 'Book a Discovery Call - Silverstream',
+  description: 'Tell us what is slowing your business down and we will explore what AI can do about it.',
 };
 
 export default function ContactLayout({

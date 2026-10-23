@@ -39,8 +39,9 @@ const nacelle = localFont({
 });
 
 export const metadata = {
-  title: "Silverstream - AI-Powered Zendesk Apps",
-  description: "Streamline and enhance your customer support with Silverstream's AI-integrated applications.",
+  title: "Silverstream - AI Transformation for Small Business",
+  description:
+    "Silverstream helps small and midsize businesses put AI to work on inventory, billing, HR, compliance, and the other tasks that eat up their week.",
   icons: {
     icon: '../favicon.ico',
   },

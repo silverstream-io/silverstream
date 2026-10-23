@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
-  const { name, company, email, phone, country } = await request.json();
+  const { name, company, email, phone, message } = await request.json();
 
   const transporter = nodemailer.createTransport({
     host: process.env.EMAIL_HOST,
@@ -18,13 +18,13 @@ export async function POST(request: Request) {
     await transporter.sendMail({
       from: process.env.EMAIL_FROM,
       to: process.env.EMAIL_TO,
-      subject: 'New Contact Form Submission',
+      subject: 'New Discovery Call Request',
       text: `
         Name: ${name}
         Company: ${company}
         Email: ${email}
         Phone: ${phone || 'Not provided'}
-        Country: ${country}
+        What's slowing them down: ${message || 'Not provided'}
       `,
     });
 
