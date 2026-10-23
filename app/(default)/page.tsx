@@ -1,13 +1,14 @@
 export const metadata = {
-  title: "Silverstream",
-  description: "AI-powered Zendesk apps for the modern customer support team",
+  title: "Silverstream - AI Transformation for Small Business",
+  description:
+    "Find where your team's time goes and put AI to work getting it back. Custom AI agents for inventory, billing, HR, and compliance.",
 };
 
 import PageIllustration from "@/components/page-illustration";
 import Hero from "@/components/hero-home";
-import Workflows from "@/components/workflows";
+import Process from "@/components/process";
 import Features from "@/components/features";
-//import Testimonials from "@/components/testimonials";
+import Testimonials from "@/components/testimonials";
 import Cta from "@/components/cta";
 
 export default function Home() {
@@ -15,9 +16,9 @@ export default function Home() {
     <>
       <PageIllustration />
       <Hero />
-      <Workflows />
+      <Process />
       <Features />
-      {/*<Testimonials />*/}
+      <Testimonials />
       <Cta />
     </>
   );

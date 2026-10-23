@@ -1,17 +1,17 @@
 # Silverstream
 
-Marketing site and lightweight backend for Silverstream—a consulting practice that designs and builds custom AI tools for customer support teams and SaaS companies.
+Marketing site and lightweight backend for Silverstream, an AI transformation consultancy for small and midsize businesses.
 
 ## What Silverstream does
 
-Silverstream helps support and product teams reduce manual work by integrating AI into the tools they already use. Engagements typically focus on:
+Silverstream helps existing SMBs put AI to work on the everyday tasks that eat up their week: inventory, billing, HR, compliance, and whatever else is slowing the team down. Engagements follow four steps:
 
-- **Custom AI agents** — Purpose-built assistants tuned to your products, policies, and tone of voice.
-- **AI-powered ticket resolution** — Smarter triage, suggested replies, and automation inside your helpdesk.
-- **Reporting and insights** — Dashboards and metrics around agent performance, resolution times, and automation impact.
-- **Stack integrations** — Zendesk, Zoho, and custom backends; tools are built to fit your existing workflow rather than replace it.
+- **Listen**: Interview the owner and the people doing the work to find where time and money are leaking.
+- **Map**: Prioritize improvements by impact and effort.
+- **Build**: Recommend existing tools or build custom AI agents connected to the client's current systems.
+- **Support**: Roll out, train, and tune as the business changes.
 
-The public site presents these capabilities on the home page and routes interested visitors to a contact form to start a conversation.
+Pricing is scoped per engagement. Clients can bring their own model provider keys or use Silverstream-managed access.
 
 ## About this repository
 
@@ -19,7 +19,7 @@ This repo is the source for the Silverstream marketing website. It is **not** a 
 
 | Area | Purpose |
 |------|---------|
-| `app/(default)/` | Home page (hero, workflows, features, CTA) and `/contact` |
+| `app/(default)/` | Home page (hero with pain points, process, features, testimonials, CTA) and `/contact` |
 | `app/api/contact/` | POST handler that emails contact form submissions via SMTP |
 | `app/(auth)/` | Sign-in/sign-up pages (present in the codebase; header links are currently disabled) |
 | `app/guild-bridge/` | Next.js route adapter for the `guild-bridge/` service (IMAP + SMS API used by internal automation) |
@@ -27,6 +27,8 @@ This repo is the source for the Silverstream marketing website. It is **not** a 
 | `guild-bridge/` | Standalone bridge service; see `guild-bridge/VERCEL.md` for deployment |
 
 The site is built with **Next.js 14** (App Router), **React 18**, **TypeScript**, and **Tailwind CSS**. It started from the [Open Pro](https://cruip.com/) template and has been customized for Silverstream’s positioning and copy.
+
+Client testimonials live in the `testimonials` array in `components/testimonials.tsx`. The section stays hidden while the array is empty and rotates automatically once it holds two or more quotes.
 
 ## Getting started
 

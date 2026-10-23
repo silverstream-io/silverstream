@@ -43,6 +43,10 @@ module.exports = {
         gradient: {
           to: { "background-position": "200% center" },
         },
+        "fade-in": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
       },
     },
   },
