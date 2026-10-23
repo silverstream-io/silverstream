@@ -16,8 +16,9 @@ export async function POST(request: Request) {
 
   try {
     await transporter.sendMail({
-      from: process.env.EMAIL_FROM,
+      from: process.env.EMAIL_FROM || process.env.EMAIL_USER,
       to: process.env.EMAIL_TO,
+      replyTo: email,
       subject: 'New Discovery Call Request',
       text: `
         Name: ${name}
