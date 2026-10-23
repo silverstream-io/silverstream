@@ -59,6 +59,20 @@ A few patterns tend to show up again and again:
 - **Anything with a deadline you track in your head**, like renewals, filings, and contract dates.
 - **Anything that answers the same question repeatedly**, whether that's from customers or from your own staff.
 
+## What this looked like for me
+
+When I ran Developer Relations at Guild.ai, a big part of my job was keeping the documentation in step with the product. Every time an engineer shipped a code change, I reviewed it and updated the docs to match. Some days that meant dozens of changes.
+
+Put that through the audit and the answer is obvious. Repetitive? Easily a 3. Every change was the same review-and-update loop. Painful? Also a 3, and then some.
+
+So I put AI on the job. Here's a full walkthrough of how I set it up:
+
+<iframe src="https://www.youtube-nocookie.com/embed/PiX7ifsFmdI" title="Using AI to keep documentation in sync with code changes" style="width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 1rem;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+_Can't see the video? [Watch it on YouTube](https://www.youtube.com/watch?v=PiX7ifsFmdI)._
+
+It's a software example, but the shape of the problem shows up in every business: information lands in one place and has to be carried over to another, again and again. Orders into inventory. Invoices into the books. Job notes into quotes. That's exactly the kind of work AI handles well.
+
 ## Step 4: Pick one
 
 It's tempting to try to fix everything at once. Don't. Pick the single task at the top of your list and focus there first.
