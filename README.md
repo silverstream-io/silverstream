@@ -1,6 +1,6 @@
 # Silverstream
 
-Marketing site and lightweight backend for Silverstream, an AI transformation consultancy for small and midsize businesses.
+Marketing site and contact form for Silverstream, an AI transformation consultancy for small and midsize businesses.
 
 ## What Silverstream does
 
@@ -22,9 +22,7 @@ This repo is the source for the Silverstream marketing website. It is **not** a 
 | `app/(default)/` | Home page (hero with pain points, industries, process, features, testimonials, CTA) and `/contact` |
 | `app/api/contact/` | POST handler that emails contact form submissions via SMTP |
 | `app/(auth)/` | Sign-in/sign-up pages (present in the codebase; header links are currently disabled) |
-| `app/guild-bridge/` | Next.js route adapter for the `guild-bridge/` service (IMAP + SMS API used by internal automation) |
 | `components/` | Page sections and shared UI (header, footer, etc.) |
-| `guild-bridge/` | Standalone bridge service; see `guild-bridge/VERCEL.md` for deployment |
 
 The site is built with **Next.js 14** (App Router), **React 18**, **TypeScript**, and **Tailwind CSS**. It started from the [Open Pro](https://cruip.com/) template and has been customized for Silverstream’s positioning and copy.
 
@@ -76,8 +74,6 @@ Without these, the site still runs; submissions to `/api/contact` will fail unti
 ## Deployment
 
 The marketing site is a standard Next.js application and deploys cleanly to [Vercel](https://vercel.com) or any Node host that supports `next build` / `next start`.
-
-The `guild-bridge` service can be deployed separately or mounted under `/guild-bridge` on the same project; see `guild-bridge/VERCEL.md` for IMAP, Twilio, and API key setup.
 
 ## License
 
