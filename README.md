@@ -19,7 +19,7 @@ This repo is the source for the Silverstream marketing website. It is **not** a 
 
 | Area | Purpose |
 |------|---------|
-| `app/(default)/` | Home page (hero with pain points, process, features, testimonials, CTA) and `/contact` |
+| `app/(default)/` | Home page (hero with pain points, industries, process, features, testimonials, CTA) and `/contact` |
 | `app/api/contact/` | POST handler that emails contact form submissions via SMTP |
 | `app/(auth)/` | Sign-in/sign-up pages (present in the codebase; header links are currently disabled) |
 | `app/guild-bridge/` | Next.js route adapter for the `guild-bridge/` service (IMAP + SMS API used by internal automation) |
