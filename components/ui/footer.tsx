@@ -2,14 +2,17 @@ import Link from "next/link";
 import Logo from "./logo";
 import Image from "next/image";
 import FooterIllustration from "@/public/images/footer-illustration.svg";
-
-const links = [
-  { label: "How it works", href: "/#how-it-works" },
-  { label: "Why Silverstream", href: "/#why-silverstream" },
-  { label: "Contact", href: "/contact" },
-];
+import { getPosts } from "@/lib/blog";
 
 export default function Footer() {
+  // The Blog link appears once there's at least one published post.
+  const links = [
+    { label: "How it works", href: "/#how-it-works" },
+    { label: "Why Silverstream", href: "/#why-silverstream" },
+    ...(getPosts().length > 0 ? [{ label: "Blog", href: "/blog" }] : []),
+    { label: "Contact", href: "/contact" },
+  ];
+
   return (
     <footer>
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">

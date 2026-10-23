@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Logo from "./logo";
+import { getPosts } from "@/lib/blog";
 
 export default function Header() {
+  // The Blog link appears once there's at least one published post.
+  const hasPosts = getPosts().length > 0;
+
   return (
     <header className="z-30 mt-2 w-full md:mt-5">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -29,6 +33,16 @@ export default function Header() {
                 Why Silverstream
               </Link>
             </li>
+            {hasPosts && (
+              <li className="max-sm:hidden">
+                <Link
+                  href="/blog"
+                  className="px-2 text-sm text-indigo-200/65 transition hover:text-indigo-500"
+                >
+                  Blog
+                </Link>
+              </li>
+            )}
             <li>
               <Link
                 href="/contact"
