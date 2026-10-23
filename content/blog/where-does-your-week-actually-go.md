@@ -1,9 +1,8 @@
 ---
 title: "Where Does Your Week Actually Go? A 15-Minute Time Audit"
-date: 2026-10-23
+date: 2026-10-24
 description: "Before you buy any AI tool, find out where your hours really go. This simple audit takes fifteen minutes and shows you exactly where to start."
 author: "Cory Waddingham"
-draft: true
 ---
 
 Ask any small business owner how their week went and you'll usually hear some version of "busy." Ask them where the time went, and things get fuzzier. Some of it went to customers. Some went to the work they actually love. And a surprising amount went to things that just... happened. Reconciling a spreadsheet. Chasing an invoice. Answering the same question for the third time that week.
