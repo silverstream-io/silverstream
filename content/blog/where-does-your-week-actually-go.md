@@ -61,11 +61,11 @@ A few patterns tend to show up again and again:
 
 ## What this looked like for me
 
-When I ran Developer Relations at Guild.ai, a big part of my job was keeping the documentation in step with the product. Every time an engineer shipped a code change, I reviewed it and updated the docs to match. Some days that meant dozens of changes.
+When I ran Developer Relations at Guild.ai, a big part of my job was keeping the documentation in step with the product. Every time an engineer shipped a code change, I reviewed it and updated the docs to match. Some days that meant dozens of changes. I was spending easily half my week just reviewing them, and I was still falling behind.
 
-Put that through the audit and the answer is obvious. Repetitive? Easily a 3. Every change was the same review-and-update loop. Painful? Also a 3, and then some.
+Put that through the audit and the answer is obvious. Hours? About 20 a week. Repetitive? Easily a 3. Every change was the same review-and-update loop. Painful? Also a 3, and then some. That's a score of 180, five times higher than the invoicing example above.
 
-So I put AI on the job. Here's a full walkthrough of how I set it up:
+So I put AI on the job. After that, the same work took two to three hours a week at most. Here's a full walkthrough of how I set it up:
 
 <iframe src="https://www.youtube-nocookie.com/embed/PiX7ifsFmdI" title="Using AI to keep documentation in sync with code changes" style="width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 1rem;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
