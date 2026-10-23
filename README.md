@@ -36,6 +36,7 @@ Posts are Markdown files in `content/blog/`. To add one, copy `content/blog/_tem
 
 - `title` and `date` (`YYYY-MM-DD`) are required. `description`, `author`, and `canonical` are optional. Set `canonical` to the original URL when reposting something first published elsewhere, so search engines credit the original.
 - `draft: true` shows the post in `npm run dev` only. Remove it or set it to `false` to publish.
+- Posts dated in the future are scheduled: they're hidden on the live site until midnight Pacific on their `date`, then appear within the hour without a redeploy. They show in `npm run dev` with a Scheduled badge. The time zone is set in `lib/blog.ts`.
 - Files starting with `_` are ignored.
 
 The Blog link in the header and footer appears automatically once at least one post is published.

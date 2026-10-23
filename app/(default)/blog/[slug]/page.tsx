@@ -1,14 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPost, getPosts, formatDate } from "@/lib/blog";
+import { getPost, formatDate } from "@/lib/blog";
 
 type Props = { params: { slug: string } };
 
-export const dynamicParams = false;
-
-export function generateStaticParams() {
-  return getPosts().map((post) => ({ slug: post.slug }));
-}
+// Rendered per request so a scheduled post goes live on its date. A cached
+// "not found" from before the date would otherwise stick around.
+export const dynamic = "force-dynamic";
 
 export function generateMetadata({ params }: Props) {
   const post = getPost(params.slug);
@@ -47,10 +45,16 @@ export default function BlogPost({ params }: Props) {
                   <span>{post.author}</span>
                 </>
               )}
-              {post.draft && (
+              {post.draft ? (
                 <span className="rounded-full bg-amber-500/20 px-2 py-0.5 text-xs text-amber-300">
                   Draft
                 </span>
+              ) : (
+                post.scheduled && (
+                  <span className="rounded-full bg-sky-500/20 px-2 py-0.5 text-xs text-sky-300">
+                    Scheduled
+                  </span>
+                )
               )}
             </div>
           </header>

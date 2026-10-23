@@ -38,6 +38,10 @@ const nacelle = localFont({
   display: "swap",
 });
 
+// Re-render pages hourly so scheduled blog posts (and the header/footer Blog
+// link) appear on their publish date without a new deploy.
+export const revalidate = 3600;
+
 export const metadata = {
   title: "Silverstream - AI Transformation for Small Business",
   description:
