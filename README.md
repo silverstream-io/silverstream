@@ -22,11 +22,23 @@ This repo is the source for the Silverstream marketing website. It is **not** a 
 | `app/(default)/` | Home page (hero with pain points, industries, process, features, testimonials, CTA) and `/contact` |
 | `app/api/contact/` | POST handler that emails contact form submissions via SMTP |
 | `app/(auth)/` | Sign-in/sign-up pages (present in the codebase; header links are currently disabled) |
+| `app/(default)/blog/` | Blog index and post pages |
+| `content/blog/` | Blog posts as Markdown files |
 | `components/` | Page sections and shared UI (header, footer, etc.) |
 
 The site is built with **Next.js 14** (App Router), **React 18**, **TypeScript**, and **Tailwind CSS**. It started from the [Open Pro](https://cruip.com/) template and has been customized for Silverstream’s positioning and copy.
 
 Client testimonials live in the `testimonials` array in `components/testimonials.tsx`. The section stays hidden while the array is empty and rotates automatically once it holds two or more quotes.
+
+## Writing blog posts
+
+Posts are Markdown files in `content/blog/`. To add one, copy `content/blog/_template.md` to a new file such as `content/blog/my-first-post.md` (the file name becomes the URL, `/blog/my-first-post`), fill in the front matter, and write the post below it.
+
+- `title` and `date` (`YYYY-MM-DD`) are required. `description` and `author` are optional.
+- `draft: true` shows the post in `npm run dev` only. Remove it or set it to `false` to publish.
+- Files starting with `_` are ignored.
+
+The Blog link in the header and footer appears automatically once at least one post is published.
 
 ## Getting started
 
