@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const industries = [
   {
     name: "Retail",
@@ -50,7 +52,13 @@ export default function Industries() {
             </h2>
             <p className="text-lg text-indigo-200/65">
               Every industry has its own busywork. Here are a few places we
-              see AI paying off quickly. Don't see yours? Let's talk anyway.
+              see AI paying off quickly. Don't see yours?{" "}
+              <Link
+                href="/contact"
+                className="text-indigo-400 underline-offset-4 transition hover:text-indigo-300 hover:underline"
+              >
+                Let's talk anyway.
+              </Link>
             </p>
           </div>
           {/* Industries */}
