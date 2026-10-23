@@ -11,6 +11,7 @@ export type PostMeta = {
   date: string;
   description: string;
   author?: string;
+  canonical?: string;
   draft: boolean;
 };
 
@@ -39,6 +40,7 @@ function readPost(file: string): Post {
         : String(data.date),
     description: data.description ? String(data.description) : "",
     author: data.author ? String(data.author) : undefined,
+    canonical: data.canonical ? String(data.canonical) : undefined,
     draft: data.draft === true,
     html: marked.parse(content, { async: false }),
   };

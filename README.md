@@ -34,7 +34,7 @@ Client testimonials live in the `testimonials` array in `components/testimonials
 
 Posts are Markdown files in `content/blog/`. To add one, copy `content/blog/_template.md` to a new file such as `content/blog/my-first-post.md` (the file name becomes the URL, `/blog/my-first-post`), fill in the front matter, and write the post below it.
 
-- `title` and `date` (`YYYY-MM-DD`) are required. `description` and `author` are optional.
+- `title` and `date` (`YYYY-MM-DD`) are required. `description`, `author`, and `canonical` are optional. Set `canonical` to the original URL when reposting something first published elsewhere, so search engines credit the original.
 - `draft: true` shows the post in `npm run dev` only. Remove it or set it to `false` to publish.
 - Files starting with `_` are ignored.
 

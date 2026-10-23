@@ -16,6 +16,8 @@ export function generateMetadata({ params }: Props) {
   return {
     title: `${post.title} - Silverstream`,
     description: post.description,
+    // Points search engines at the original when a post was first published elsewhere
+    alternates: post.canonical ? { canonical: post.canonical } : undefined,
   };
 }
 

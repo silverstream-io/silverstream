@@ -6,6 +6,7 @@ title: "Your post title"
 date: 2026-10-23 # YYYY-MM-DD; newest posts are listed first
 description: "One or two sentences shown on the blog list and in search results."
 author: "Cory Waddingham" # optional
+# canonical: "https://example.com/original-post" # optional; use when reposting from elsewhere
 draft: true # visible in `npm run dev` only; set to false (or delete) to publish
 ---
 
