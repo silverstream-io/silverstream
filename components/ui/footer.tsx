@@ -2,16 +2,10 @@ import Link from "next/link";
 import Logo from "./logo";
 import Image from "next/image";
 import FooterIllustration from "@/public/images/footer-illustration.svg";
-import { getPosts } from "@/lib/blog";
+import { getNavLinks } from "@/lib/nav";
 
 export default function Footer() {
-  // The Blog link appears once there's at least one published post.
-  const links = [
-    { label: "How it works", href: "/#how-it-works" },
-    { label: "Why Silverstream", href: "/#why-silverstream" },
-    ...(getPosts().length > 0 ? [{ label: "Blog", href: "/blog" }] : []),
-    { label: "Contact", href: "/contact" },
-  ];
+  const links = getNavLinks();
 
   return (
     <footer>
