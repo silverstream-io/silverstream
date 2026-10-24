@@ -1,11 +1,9 @@
 import Link from "next/link";
 import Logo from "./logo";
-import { getPosts } from "@/lib/blog";
+import NavMenu from "./nav-menu";
+import { getNavLinks } from "@/lib/nav";
 
 export default function Header() {
-  // The Blog link appears once there's at least one published post.
-  const hasPosts = getPosts().length > 0;
-
   return (
     <header className="z-30 mt-2 w-full md:mt-5">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -16,42 +14,15 @@ export default function Header() {
           </div>
 
           {/* Navigation */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
-            <li className="max-sm:hidden">
-              <Link
-                href="/#how-it-works"
-                className="px-2 text-sm text-indigo-200/65 transition hover:text-indigo-500"
-              >
-                How it works
-              </Link>
-            </li>
-            <li className="max-sm:hidden">
-              <Link
-                href="/#why-silverstream"
-                className="px-2 text-sm text-indigo-200/65 transition hover:text-indigo-500"
-              >
-                Why Silverstream
-              </Link>
-            </li>
-            {hasPosts && (
-              <li className="max-sm:hidden">
-                <Link
-                  href="/blog"
-                  className="px-2 text-sm text-indigo-200/65 transition hover:text-indigo-500"
-                >
-                  Blog
-                </Link>
-              </li>
-            )}
-            <li>
-              <Link
-                href="/contact"
-                className="btn-sm bg-gradient-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] py-[5px] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]"
-              >
-                Book a call
-              </Link>
-            </li>
-          </ul>
+          <div className="flex flex-1 items-center justify-end gap-2">
+            <Link
+              href="/contact"
+              className="btn-sm bg-gradient-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] py-[5px] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]"
+            >
+              Book a call
+            </Link>
+            <NavMenu links={getNavLinks()} />
+          </div>
         </div>
       </div>
     </header>
