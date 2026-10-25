@@ -1,9 +1,8 @@
 ---
 title: "How Do You Trust AI?"
-date: 2026-10-25
+date: 2026-10-27
 description: "AI answers with confidence whether it's right or wrong. Here's why that happens, why even AI checking AI falls short, and how ground truth lets you measure what you can actually rely on."
 author: "Cory Waddingham"
-draft: true
 ---
 
 One of the first questions I hear from business owners is some version of: "How do I know it's right?"
@@ -17,8 +16,6 @@ The good news is that trust in AI doesn't have to be a leap of faith. You can me
 **Tokens.** AI models don't read words the way we do. They break text into small pieces called tokens. A token might be a whole word, part of a word, or a piece of punctuation. As a rule of thumb, 1,000 tokens is roughly 750 words. When someone talks about "token counts," they're talking about how much text is going into or coming out of a model. It's also how most AI services charge for usage.
 
 **Context window.** This is how much text a model can consider at one time, measured in tokens. Think of it as the model's desk. Everything on the desk (your question, any documents you've shared, the conversation so far) is what the model can work with. Anything that isn't on the desk might as well not exist. Desks have gotten much bigger over the past few years, but they still have edges.
-
-Keep that desk in mind. It comes up again shortly.
 
 ## Why AI sounds right even when it's wrong
 
