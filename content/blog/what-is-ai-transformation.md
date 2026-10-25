@@ -1,9 +1,8 @@
 ---
 title: "What Is AI Transformation?"
-date: 2026-10-25
+date: 2026-10-26
 description: "AI transformation sounds like something only big companies do. For a small business, it's simpler and more practical than it sounds. Here's what it means and how it works."
 author: "Cory Waddingham"
-draft: true
 ---
 
 "AI transformation" is one of those phrases that sounds like it belongs in a boardroom. It conjures up big consulting firms, eighteen-month roadmaps, and budgets with a lot of zeros.
