@@ -12,7 +12,7 @@ export function generateMetadata({ params }: Props) {
   const post = getPost(params.slug);
   if (!post) return {};
   return {
-    title: `${post.title} - Silverstream`,
+    title: `${post.title} - Silverstream AI Solutions`,
     description: post.description,
     // Points search engines at the original when a post was first published elsewhere
     alternates: post.canonical ? { canonical: post.canonical } : undefined,

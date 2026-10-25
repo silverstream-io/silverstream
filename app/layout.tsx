@@ -43,9 +43,9 @@ const nacelle = localFont({
 export const revalidate = 3600;
 
 export const metadata = {
-  title: "Silverstream - AI Transformation for Small Business",
+  title: "Silverstream AI Solutions - AI Transformation for Small Business",
   description:
-    "Silverstream helps small and midsize businesses put AI to work on inventory, billing, HR, compliance, and the other tasks that eat up their week.",
+    "Silverstream AI Solutions helps small and midsize businesses put AI to work on inventory, billing, HR, compliance, and the other tasks that eat up their week.",
   icons: {
     icon: '../favicon.ico',
   },

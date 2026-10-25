@@ -46,7 +46,7 @@ export default function Footer() {
               ))}
             </ul>
             <p className="text-indigo-200/65">
-              © {new Date().getFullYear()} Silverstream
+              © {new Date().getFullYear()} Silverstream AI Solutions
             </p>
           </div>
         </div>

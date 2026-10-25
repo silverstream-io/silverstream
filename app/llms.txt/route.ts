@@ -16,9 +16,9 @@ export function GET() {
     )
     .join("\n");
 
-  const body = `# Silverstream
+  const body = `# Silverstream AI Solutions
 
-> Silverstream is an AI transformation consultancy for small and midsize businesses. We help existing businesses find where their time goes and put AI to work on the repetitive tasks that slow them down, such as inventory, billing, HR, and compliance.
+> Silverstream AI Solutions is an AI transformation consultancy for small and midsize businesses. We help existing businesses find where their time goes and put AI to work on the repetitive tasks that slow them down, such as inventory, billing, HR, and compliance.
 
 Silverstream works with owners and their teams in four steps:
 
