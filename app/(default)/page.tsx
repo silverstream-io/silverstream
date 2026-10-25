@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Silverstream - AI Transformation for Small Business",
+  title: "Silverstream AI Solutions - AI Transformation for Small Business",
   description:
     "Find where your team's time goes and put AI to work getting it back. Custom AI agents for inventory, billing, HR, and compliance.",
 };

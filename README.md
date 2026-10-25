@@ -1,6 +1,6 @@
-# Silverstream
+# Silverstream AI Solutions
 
-Marketing site and contact form for Silverstream, an AI transformation consultancy for small and midsize businesses.
+Marketing site and contact form for Silverstream AI Solutions, an AI transformation consultancy for small and midsize businesses.
 
 ## What Silverstream does
 

@@ -42,7 +42,7 @@ None of these replace anyone. They take a slow, tedious task off someone's plate
 
 ## How it actually happens
 
-At Silverstream, every engagement follows the same four steps:
+At Silverstream AI Solutions, every engagement follows the same four steps:
 
 1. **Listen.** We talk with you and with the people doing the work every day to find where time and money are slipping away.
 2. **Map.** Together we pick the improvements worth making first, weighed by impact and effort.

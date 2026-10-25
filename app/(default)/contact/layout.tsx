@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Book a Discovery Call - Silverstream',
+  title: 'Book a Discovery Call - Silverstream AI Solutions',
   description: 'Tell us what is slowing your business down and we will explore what AI can do about it.',
 };
 

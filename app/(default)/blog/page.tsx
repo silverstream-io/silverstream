@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getPosts, formatDate } from "@/lib/blog";
 
 export const metadata = {
-  title: "Blog - Silverstream",
+  title: "Blog - Silverstream AI Solutions",
   description:
     "Practical notes on putting AI to work in small and midsize businesses.",
 };

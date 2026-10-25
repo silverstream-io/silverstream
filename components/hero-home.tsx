@@ -42,9 +42,9 @@ export default function HeroHome() {
               <p className="mb-8 text-xl text-indigo-200/65">
                 Inventory, billing, HR, compliance. Every small business
                 wrestles with the same handful of time sinks, and every one of
-                them can be improved with the right AI. Silverstream helps you
-                find where the hours go and puts AI to work on getting them
-                back.
+                them can be improved with the right AI. Silverstream AI
+                Solutions helps you find where the hours go and puts AI to work
+                on getting them back.
               </p>
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <Link
