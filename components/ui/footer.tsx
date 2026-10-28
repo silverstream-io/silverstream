@@ -31,6 +31,12 @@ export default function Footer() {
             <p className="text-sm text-indigo-200/65">
               Practical AI for small and midsize businesses.
             </p>
+            <Link
+              href="/rage-room"
+              className="mt-4 inline-block text-xs text-indigo-200/40 transition hover:text-indigo-400"
+            >
+              Is AI making you anxious? Let off some steam in our rage room.
+            </Link>
           </div>
           <div className="text-sm md:text-right">
             <ul className="mb-3 flex flex-wrap gap-x-6 gap-y-2 md:justify-end">
