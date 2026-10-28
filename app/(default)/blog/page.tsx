@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { getPosts, formatDate } from "@/lib/blog";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Blog - Silverstream AI Solutions",
   description:
     "Practical notes on putting AI to work in small and midsize businesses.",
-};
+  path: "/blog",
+});
 
 export default function Blog() {
   const posts = getPosts();

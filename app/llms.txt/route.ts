@@ -1,6 +1,5 @@
 import { getPosts } from "@/lib/blog";
-
-const SITE_URL = "https://silverstream.io";
+import { SITE_URL } from "@/lib/site";
 
 // Regenerated hourly so scheduled blog posts are listed on their publish date.
 export const revalidate = 3600;

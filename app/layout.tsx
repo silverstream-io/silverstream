@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
 import Header from "@/components/ui/header";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, jsonLd } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,12 +44,51 @@ const nacelle = localFont({
 export const revalidate = 3600;
 
 export const metadata = {
-  title: "Silverstream AI Solutions - AI Transformation for Small Business",
-  description:
-    "Silverstream AI Solutions helps small and midsize businesses put AI to work on inventory, billing, HR, compliance, and the other tasks that eat up their week.",
+  metadataBase: new URL(SITE_URL),
+  title: `${SITE_NAME} - AI Transformation for Small Business`,
+  description: SITE_DESCRIPTION,
   icons: {
-    icon: '../favicon.ico',
+    icon: "/favicon.ico",
   },
+};
+
+// Describes the business to search engines and AI assistants.
+const organization = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": `${SITE_URL}/#organization`,
+      name: SITE_NAME,
+      alternateName: "Silverstream",
+      url: SITE_URL,
+      logo: `${SITE_URL}/images/logo-white.svg`,
+      description: SITE_DESCRIPTION,
+      founder: { "@type": "Person", name: "Cory Waddingham" },
+      knowsAbout: [
+        "AI transformation",
+        "AI agents",
+        "Business process automation",
+        "Small business operations",
+      ],
+      makesOffer: [
+        "AI readiness interviews and workflow assessment",
+        "Custom AI agent development",
+        "AI tool selection and integration",
+        "AI rollout, training, and ongoing support",
+      ].map((name) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name },
+      })),
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: SITE_NAME,
+      publisher: { "@id": `${SITE_URL}/#organization` },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -61,6 +101,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${nacelle.variable} bg-gray-950 font-inter text-base text-gray-200 antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(organization)}
+        />
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
           {children}
