@@ -3,6 +3,7 @@ import Logo from "./logo";
 import Image from "next/image";
 import FooterIllustration from "@/public/images/footer-illustration.svg";
 import { getNavLinks } from "@/lib/nav";
+import RageRoom from "@/components/rage-room";
 
 export default function Footer() {
   const links = getNavLinks();
@@ -31,6 +32,9 @@ export default function Footer() {
             <p className="text-sm text-indigo-200/65">
               Practical AI for small and midsize businesses.
             </p>
+            <div className="mt-4">
+              <RageRoom />
+            </div>
           </div>
           <div className="text-sm md:text-right">
             <ul className="mb-3 flex flex-wrap gap-x-6 gap-y-2 md:justify-end">
