@@ -24,6 +24,8 @@ Before you sit down with your team, answer one question for yourself: when AI gi
 
 Maybe it's finally getting to the customers you've been too busy to call back. Maybe it's growing without hiring for another year, or giving people time to learn new skills, or simply ending the late nights that everyone has quietly accepted as normal.
 
+Growth is often the easiest answer to see. I recently spoke with a business owner who had just bought a second company, one that runs late-night TV commercials. Nobody is there to answer the calls those ads bring in, so they go to voicemail, and maybe someone follows up the next day. AI allows you to expand the business without anything slipping through the cracks. An AI assistant can answer those late-night calls, capture each caller's details, and have a warm lead waiting for your team in the morning. Nobody's job goes away. Your team simply gets more customers to work with.
+
 Whatever your answer is, be specific, and only promise what you're sure you can deliver. Your team will trust a modest, honest commitment much more than a sweeping one.
 
 ## Five talking points for the conversation

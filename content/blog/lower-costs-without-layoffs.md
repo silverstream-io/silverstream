@@ -30,19 +30,25 @@ For many small businesses, one of the biggest money problems is waiting to get p
 
 AI can send invoices as soon as the job is done and follow up on overdue accounts politely and consistently. Getting paid faster won't show up as a line item called "AI savings," but it's one of the most noticeable improvements an owner feels.
 
-## 4. Growing without hiring yet
+## 4. Leads that arrive after hours
 
-Here's the savings most owners overlook. When your current team is no longer buried in busywork, they can take on more customers, more orders, and more projects.
+I recently spoke with a business owner who had just bought a second company, one that runs late-night TV commercials. The ads work, and the phone rings. But nobody is there to answer it at that hour, so the calls go to voicemail, and maybe someone follows up the next day. By then, a lot of those callers have already moved on to someone else. That's money flying out the window.
+
+AI works 24/7. It can handle the customer calls and sales leads that come in when everyone is home asleep: answering common questions, capturing the caller's details, and booking a time to talk. An intelligent process that follows up immediately on fresh inbound leads means never missing another opportunity, and your team starts the morning with warm leads instead of a pile of voicemails.
+
+## 5. Growing without hiring yet
+
+When your current team is no longer buried in busywork, they can take on more customers, more orders, and more projects.
 
 That means the next hire can wait until the business genuinely needs a new role, rather than happening just because everyone is overwhelmed. Growth without the stress of growing headcount is a very different kind of savings from cutting it.
 
-## 5. Keeping the people you have
+## 6. Keeping the people you have
 
-Burnout is expensive. When good people leave, you lose their experience and spend weeks finding and training someone new. Every owner knows what that costs, even if it never appears on a spreadsheet.
+Burnout is expensive. When good people leave, you lose their experience and spend weeks, sometimes months, finding and training someone new. Every owner knows what that costs, even if it never appears on a spreadsheet.
 
 Removing the most tedious parts of the job is one of the most practical ways to keep people around. As we wrote about in ["Will AI Take My Job?"](/blog/will-ai-take-my-job), the work your team dislikes most is usually the best place to start.
 
-## 6. Tools you no longer need
+## 7. Tools you no longer need
 
 Many small businesses pay for several subscriptions that each solve a sliver of a problem. A well-designed AI workflow can sometimes replace a few of them, or at least make it clear which ones are pulling their weight.
 
