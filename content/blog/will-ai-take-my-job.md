@@ -3,7 +3,6 @@ title: "\"Will AI Take My Job?\" How to Answer When Your Team Asks"
 date: 2026-10-28
 description: "Your staff is wondering what AI means for them, even if nobody has said it out loud. Here's how to have an honest conversation that turns worry into buy-in."
 author: "Cory Waddingham"
-draft: true
 ---
 
 The moment you mention AI to your team, someone is going to wonder about their job. They might ask you directly. More likely, they'll just think it, and you'll see it in how quietly the room goes.

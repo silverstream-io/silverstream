@@ -1,9 +1,8 @@
 ---
 title: "Lower Costs Without Layoffs: Where AI Savings Really Come From"
-date: 2026-10-28
+date: 2026-10-30
 description: "AI can lower what it costs to run your business without cutting your team. Here's where the savings actually show up, and how to measure them."
 author: "Cory Waddingham"
-draft: true
 ---
 
 When owners ask what AI will save them, they often picture one thing: fewer people on the payroll. Their staff pictures the same thing, which is why the subject makes everyone nervous.
