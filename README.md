@@ -19,12 +19,13 @@ This repo is the source for the Silverstream marketing website. It is **not** a 
 
 | Area | Purpose |
 |------|---------|
-| `app/(default)/` | Home page (hero with pain points, industries, process, features, testimonials, CTA) and `/contact` |
+| `app/(default)/` | Home page (hero with pain points, industries, process, features, testimonials, CTA), `/pricing`, and `/contact` |
 | `app/api/contact/` | POST handler that emails contact form submissions via SMTP |
 | `app/(default)/blog/` | Blog index and post pages |
 | `content/blog/` | Blog posts as Markdown files |
 | `app/robots.ts`, `app/sitemap.ts`, `app/llms.txt/` | Crawler and AI assistant discovery files |
-| `lib/site.ts` | Site URL, name, page metadata, and structured data helpers |
+| `lib/site.ts` | Site URL, name, services, pricing, page metadata, and structured data helpers |
+| `components/agent-tools.tsx` | WebMCP tools that let browser AI agents read services, list posts, and request a discovery call |
 | `components/` | Page sections and shared UI (header, footer, etc.) |
 
 The site is built with **Next.js 14** (App Router), **React 18**, **TypeScript**, and **Tailwind CSS**. It started from the [Open Pro](https://cruip.com/) template and has been customized for Silverstream’s positioning and copy.
