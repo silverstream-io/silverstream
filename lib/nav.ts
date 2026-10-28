@@ -8,6 +8,7 @@ export function getNavLinks(): NavLink[] {
   return [
     { label: "How it works", href: "/#how-it-works" },
     { label: "Why Silverstream", href: "/#why-silverstream" },
+    { label: "Pricing", href: "/pricing" },
     ...(getPosts().length > 0 ? [{ label: "Blog", href: "/blog" }] : []),
     { label: "Contact", href: "/contact" },
   ];

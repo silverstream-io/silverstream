@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPost, formatDate } from "@/lib/blog";
+import { SITE_URL, jsonLd, pageMetadata } from "@/lib/site";
 
 type Props = { params: { slug: string } };
 
@@ -11,20 +12,42 @@ export const dynamic = "force-dynamic";
 export function generateMetadata({ params }: Props) {
   const post = getPost(params.slug);
   if (!post) return {};
-  return {
+  return pageMetadata({
     title: `${post.title} - Silverstream AI Solutions`,
     description: post.description,
+    path: `/blog/${post.slug}`,
     // Points search engines at the original when a post was first published elsewhere
-    alternates: post.canonical ? { canonical: post.canonical } : undefined,
-  };
+    canonical: post.canonical,
+    openGraph: {
+      type: "article",
+      publishedTime: post.date,
+      authors: post.author ? [post.author] : undefined,
+    },
+  });
 }
 
 export default function BlogPost({ params }: Props) {
   const post = getPost(params.slug);
   if (!post) notFound();
 
+  const article = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    url: `${SITE_URL}/blog/${post.slug}`,
+    mainEntityOfPage: post.canonical ?? `${SITE_URL}/blog/${post.slug}`,
+    author: post.author ? { "@type": "Person", name: post.author } : undefined,
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+
   return (
     <section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLd(article)}
+      />
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <article className="py-12 md:py-20">
           <Link

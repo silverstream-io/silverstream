@@ -1,6 +1,5 @@
 import { getPosts } from "@/lib/blog";
-
-const SITE_URL = "https://silverstream.io";
+import { SITE_URL } from "@/lib/site";
 
 // Regenerated hourly so scheduled blog posts are listed on their publish date.
 export const revalidate = 3600;
@@ -34,6 +33,7 @@ Industries we commonly help include retail, restaurants and bars, real estate, a
 ## Pages
 
 - [Home](${SITE_URL}/): Common small business pain points, industries served, how engagements work, and why Silverstream
+- [Pricing](${SITE_URL}/pricing): Free discovery call, engagements quoted per project, and options for AI model usage
 - [Book a discovery call](${SITE_URL}/contact): Contact form to start a free conversation about what AI could do for a business
 - [Blog](${SITE_URL}/blog): Practical notes on putting AI to work in small and midsize businesses
 ${posts ? `\n## Blog posts\n\n${posts}\n` : ""}`;
