@@ -12,7 +12,7 @@ They hadn't done anything reckless or malicious. They had taken a handful of slo
 
 Then the company's security team reviewed what they'd built and found a problem: in one step, a credential was being handled in a way it shouldn't have been. A real issue, and worth fixing. But instead of fixing it, the company shut everything down and let my friend go.
 
-Here's the part that stuck with me. The company had never told anyone how they were allowed to use AI. No policy, no approved tools, no "check with us before you connect anything to our systems." Nothing.
+The thing is, though, the company had never told anyone how they were allowed to use AI. No policy, no approved tools, no "check with us before you connect anything to our systems." Nothing.
 
 ## People are going to use AI either way
 
@@ -22,9 +22,9 @@ Without clear guidance, mistakes are almost inevitable. Usually that's because n
 
 ## Was there a real problem? Yes
 
-It's worth being fair here. Security concerns about AI are legitimate. Credentials, customer data, and financial information all deserve care, and a shortcut that exposes any of them can cause real damage.
+I'm not trying to paint anyone as the bad guy, and the security team were just doing their job. After all, security concerns about AI are legitimate. Credentials, customer data, and financial information all deserve care, and a shortcut that exposes any of them can cause real damage.
 
-Should my friend have looped in the security team before rolling out what they built? Probably. Most of us would agree with that in hindsight.
+Should my friend have looped in the security team before rolling out what they built? Probably, sure. Most of us would agree with that in hindsight.
 
 But there's a big difference between "this needs to be fixed" and "this person needs to go." The issue they found could have been corrected in an afternoon. The improvement it was attached to was worth far more than that. The company threw out the baby with the bathwater, and the work my friend did went with them.
 
