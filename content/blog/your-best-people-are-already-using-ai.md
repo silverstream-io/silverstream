@@ -45,7 +45,7 @@ You don't need a 40-page document. A small business can cover the essentials on 
 - **Checking the output.** AI makes mistakes, so a person reviews anything that goes to a customer or affects money. Our post on [trusting AI](/blog/how-do-you-trust-ai) goes deeper on how to do that well.
 - **What happens when something goes wrong.** Mistakes get reported, fixed, and turned into a better rule. Nobody gets punished for raising a problem early.
 
-That last point matters most. If people are afraid of being fired for a mistake, they'll hide their AI use instead of asking for help, and that's when small problems become big ones.
+If you do nothing else, have a plan for that last one. Mistakes happen and if people are afraid of being fired for making one, they'll hide their AI use instead of asking for help. That's how small problems become big ones.
 
 ## When something does go wrong, respond in proportion
 
