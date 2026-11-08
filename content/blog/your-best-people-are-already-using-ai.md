@@ -1,9 +1,9 @@
 ---
 title: "Your Best People Are Already Using AI. Here's How to Keep Them."
-date: 2026-11-07
+date: 2026-11-08
 description: "When there are no rules for using AI, your most capable employees take the biggest risks, and pay the biggest price. A simple AI policy protects them and your business."
 author: "Cory Waddingham"
-draft: true
+draft: false
 ---
 
 Someone I know was recently let go for using AI at work.
