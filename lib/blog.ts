@@ -21,9 +21,11 @@ export type PostMeta = {
 
 export type Post = PostMeta & { html: string };
 
-// Drafts and future-dated posts show up in `npm run dev` so you can preview
-// them, but never in production.
-const showUnpublished = process.env.NODE_ENV !== "production";
+// Drafts and future-dated posts show up in `npm run dev` and on Vercel preview
+// deployments so you can review or share them, but never on the live site.
+const showUnpublished =
+  process.env.NODE_ENV !== "production" ||
+  process.env.VERCEL_ENV === "preview";
 
 function today() {
   // en-CA formats as YYYY-MM-DD, matching the front matter dates
