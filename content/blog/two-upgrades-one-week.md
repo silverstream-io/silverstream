@@ -3,7 +3,7 @@ title: "Two Upgrades, One Week: What the FAA Ground Stop Can Teach Us About Repl
 date: 2026-11-15
 description: "Friday's nationwide ground stop is still under investigation, but what we already know is a useful reminder of how to upgrade critical systems, especially when AI is part of the change."
 author: "Cory Waddingham"
-draft: true
+draft: false
 ---
 
 On Friday afternoon, the FAA stopped every departing flight in the country. For a little over four hours, nothing took off. More than 5,000 flights were cancelled over the following days, and airlines are still repositioning planes and crews.
